@@ -1,0 +1,19 @@
+body{
+    margin: 0px;
+}
+
+/* Style for top navigation bar */
+
+.top-nav-bar{
+    overflow: hidden;
+    background-color: black;
+}
+
+.top-nav-bar a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
