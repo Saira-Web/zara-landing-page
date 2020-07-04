@@ -4,16 +4,171 @@ body{
 
 /* Style for top navigation bar */
 
-.top-nav-bar{
+/* Add white background color to the top navigation */
+.header{
     overflow: hidden;
-    background-color: black;
+    background-color: white;
+    padding: 20px 10px;
+}
+/* Style the links inside the navigation bar */
+.header a {
+    float: left;
+    color:black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 4px;
 }
 
-.top-nav-bar a {
-    float: right;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+.header a.logo{
+    height: 5%;
+    font-weight: bold;
 }
+
+/* Add a color to the actvie/current link */
+header a.active{
+    background-color: darkviolet;
+    color:white;
+}
+
+.header a:hover {
+    background-color: dodgerblue;
+    color: black;
+}
+
+.top-nav-bar{
+    float: right;
+}
+
+/* Style for main content start here */
+
+.div-relative{
+       position: relative;
+    
+    }
+
+    .item1 {
+        position: relative;
+        background-color: #6097c4;
+        width: 100%;
+        height:800px;
+        margin-top: 20px;
+    }
+
+
+
+    .div-absolute{
+        position: absolute;
+        width: 60%;
+        height: 100%;
+    
+    }
+
+
+/* Add media queries for responsive/mobile version -
+    When screen is 500px wide or less, stack the links on top of each others */
+    @media screen and (max-width: 500px){
+        .header a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+        .top-nav-bar{
+            float: none;
+        }
+    }
+
+    
+
+    /* style for footer */
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgb(63, 55, 55);
+    color: white;
+    padding-top: 2em;
+    height: 25em;
+    width: 100%;
+}
+
+ .item {
+
+    border: none solid white;
+    text-align:center;
+    /*width: 10em;
+    padding: 3em;*/
+} 
+
+.item img {
+    width:100%;
+    height:17em;
+    margin-bottom:10px;
+}
+
+.item p{
+    margin-bottom:20px;
+}
+ 
+/* .grid-container .item  {
+    
+    border: 0.5em solid black;
+    margin-bottom: 2em;
+    margin-left: 0.5em;
+
+} */
+
+
+
+/* Style for footer starts here */
+.footer{
+    margin-top: 60%;
+    background-color: darkgray;
+    color:cornsilk
+}
+/* .items{
+    flex-basis: calc(96%/ 4);
+    margin-bottom: 1em;
+} */
+
+/* style for footer */
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: black;
+    color: white;
+    padding-top: 2em;
+    height: 25em;
+    width: 100%;
+}
+
+.item {
+
+    border: none solid white;
+    text-align:center;
+    /*width: 10em;
+    padding: 3em;*/
+}
+
+.item img {
+    width:100%;
+    height:7em;
+    margin-bottom:10px;
+}
+
+.item p{
+    margin-bottom:20px;
+}
+@media screen and (min-width:40em){
+    .footer-container {
+        display: unset;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+      background-color: lightblue;
+    }
+  }
